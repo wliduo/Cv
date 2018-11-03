@@ -6,46 +6,34 @@
   <meta name="viewport" content="width=100%, initial-scale=1">
   <link rel="shortcut icon" href="https://wang64.cn/static/favicon.ico">
   <title>随心</title>
-  <link href="css/index.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript">
+    var name = prompt("请输入我的手机号码");
+    if (name != '15979271416' && name != "13266781417"){
+      var flag = confirm("号码错误，点击确定跳转到主页，取消回到之前页面");
+      if (flag == true) {
+        window.location.href = "https://wang64.cn";
+      }else{
+        window.location.href = "https://cv.wang64.cn";
+      }
+    }else{
+      setTimeout(function(){
+        document.getElementById("msg1").innerHTML = "想得美~hhh~";
+        setTimeout(function(){
+          document.getElementById("msg2").innerHTML = "其实是简历还没写呢~";
+          setTimeout(function(){
+            document.getElementById("msg3").innerHTML = "o(*////▽////*)o~";
+          },1000)
+        },1000)
+      },1000)
+    }
+  </script>
 </head>
 
 <body>
-  <div id="content">
-    <div class="container">
-      <div class="panel panel-left">
-        <div class="discription">
-          <h2>随心</h2>
-          <p>简单，乐观，随和</p>
-          <h3>IT民工</h3>
-        </div>
-        <div class="link-panel">
-          <div class="link"><a href="https://wang64.cn" target="_blank">主页</a></div>
-          <div class="link"><a href="https://cv.wang64.cn/cv" target="_blank">简历</a></div>
-          <div class="link"><a href="mailto:1107224733@qq.com">邮件</a></div>
-          <div class="link"><a href="http://github.com/wang926454" target="_blank">GitHub</a></div>
-          <div class="link"><a href="https://blog.csdn.net/wang926454" target="_blank">CSDN</a></div>
-          <div class="link"><a href="https://weibo.com/wang926454" target="_blank">微博</a></div>
-        </div>
-        <img id="img" src="https://blog.wang64.cn/assets/images/avatar.gif" alt="随心">
-      </div>
-      <div class="panel panel-right">
-        <div class="discription">
-          <h2>Eren</h2>
-          <p>Simple, Optimistic And Easy-Going.</p>
-          <h3>IT Farmer</h3>
-        </div>
-        <div class="link-panel">
-          <div class="link"><a href="https://wang64.cn" target="_blank">Home</a></div>
-          <div class="link"><a href="https://cv.wang64.cn/cv" target="_blank">CV</a></div>
-          <div class="link"><a href="mailto:1107224733@qq.com">Email</a></div>
-          <div class="link"><a href="http://github.com/wang926454" target="_blank">GitHub</a></div>
-          <div class="link"><a href="https://blog.csdn.net/wang926454" target="_blank">CSDN</a></div>
-          <div class="link"><a href="https://weibo.com/wang926454" target="_blank">Weibo</a></div>
-        </div>
-      </div>
-      <img id="avatar" src="img/avatar.png">
-    </div>
-  </div>
+  <h2 align="center">还想看我简历</h2>
+  <h2 align="center" id="msg1"></h2>
+  <h2 align="center" id="msg2"></h2>
+  <h2 align="center" id="msg3"></h2>
 </body>
 
 </html>
