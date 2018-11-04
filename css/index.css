@@ -39,11 +39,11 @@ img#avatar {
 h2 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
-    min-height: 60px;
+    height: 60px;
 }
 
 p {
-    min-height: 25px;
+    height: 25px;
     margin-bottom: 3px;
 }
 
@@ -132,9 +132,6 @@ p {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    opacity: 0.5;
-    -webkit-animation: breathing 5s ease-out infinite normal;
-    animation: breathing 5s ease-out infinite normal;
 }
 
 
