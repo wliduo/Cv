@@ -6,15 +6,26 @@
   <meta name="viewport" content="width=100%, initial-scale=1">
   <link rel="shortcut icon" href="https://wang64.cn/static/favicon.ico">
   <title>随心</title>
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?1826dd4e676f6c917705c5632139f6dd";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
   <script type="text/javascript">
     var name = prompt("请输入我的手机号码");
     if (name != '15979271416' && name != "13266781417"){
-      var flag = confirm("号码错误，点击确定跳转到主页，取消回到之前页面");
+      /* var flag = confirm("号码错误，点击确定跳转到主页，取消回到之前页面");
       if (flag == true) {
         window.location.href = "https://wang64.cn";
       }else{
         window.location.href = "https://cv.wang64.cn";
-      }
+      } */
+      alert("号码错误");
+      window.history.go(-1);
     }else{
       setTimeout(function(){
         document.getElementById("msg1").innerHTML = "想得美~hhh";
