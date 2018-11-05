@@ -18,12 +18,6 @@
   <script type="text/javascript">
     var name = prompt("请输入我的手机号码");
     if (name != '15979271416' && name != "13266781417"){
-      /* var flag = confirm("号码错误，点击确定跳转到主页，取消回到之前页面");
-      if (flag == true) {
-        window.location.href = "https://wang64.cn";
-      }else{
-        window.location.href = "https://cv.wang64.cn";
-      } */
       alert("号码错误");
       window.history.go(-1);
     }else{
@@ -37,6 +31,10 @@
         },1000)
       },1000)
     }
+
+    function cv2() {
+      window.location.href = "https://cv.wang64.cn/cv2";
+    }
   </script>
 </head>
 
@@ -44,7 +42,7 @@
   <h2 align="center">还想看我简历</h2>
   <h2 align="center" id="msg1"></h2>
   <h2 align="center" id="msg2"></h2>
-  <h2 align="center" id="msg3"></h2>
+  <h2 align="center" id="msg3" ondblclick="cv2()"></h2>
 </body>
 
 </html>
