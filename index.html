@@ -7,6 +7,8 @@
   <link rel="shortcut icon" href="https://wang64.cn/static/favicon.ico">
   <title>随心</title>
   <link href="css/index.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://text.wang64.cn/typing/css/typing.css">
+  <script src="https://text.wang64.cn/typing/js/typing.js"></script>
   <script>
     var _hmt = _hmt || [];
     (function() {
@@ -41,24 +43,36 @@
         </a>
       </div>
       <div class="panel panel-right">
-        <div class="link-panel" style="margin-top: 5px;">
-          <div class="link"><a href="https://weibo.com/wang926454" target="_blank">Weibo</a></div>
-          <div class="link"><a href="https://blog.csdn.net/wang926454" target="_blank">CSDN</a></div>
-          <div class="link"><a href="https://gitee.com/wang926454" target="_blank">Gitee</a></div>
-          <div class="link"><a href="https://github.com/wang926454" target="_blank">GitHub</a></div>
-          <div class="link"><a href="mailto:1107224733@qq.com">Email</a></div>
-          <div class="link"><a href="https://cv.wang64.cn/cv" target="_blank">CV</a></div>
-          <div class="link"><a href="https://wang64.cn" target="_blank">Home</a></div>
+        <div id="source" style="display: none;">
+          <div class="link-panel" style="margin-top: 5px;">
+            <div class="link"><a href="https://weibo.com/wang926454" target="_blank">Weibo</a></div>
+            <div class="link"><a href="https://blog.csdn.net/wang926454" target="_blank">CSDN</a></div>
+            <div class="link"><a href="https://gitee.com/wang926454" target="_blank">Gitee</a></div>
+            <div class="link"><a href="https://github.com/wang926454" target="_blank">GitHub</a></div>
+            <div class="link"><a href="mailto:1107224733@qq.com">Email</a></div>
+            <div class="link"><a href="https://cv.wang64.cn/cv" target="_blank">CV</a></div>
+            <div class="link"><a href="https://wang64.cn" target="_blank">Home</a></div>
+          </div>
+          <div class="discription" style="margin-top: 40px;">
+            <h3>IT Farmer</h3>
+            <p>Simple. Optimistic. Easy-Going.</p>
+            <h2 style="margin-top: 10px;">Eren</h2>
+          </div>
         </div>
-        <div class="discription" style="margin-top: 40px;">
-          <h3>IT Farmer</h3>
-          <p>Simple. Optimistic. Easy-Going.</p>
-          <h2 style="margin-top: 10px;">Eren</h2>
+        <div id="output">
         </div>
       </div>
       <img id="avatar" src="img/avatar.png">
     </div>
   </div>
+  <script type="text/javascript">
+      var typing = new Typing({
+          source: document.getElementById('source'),
+          output: document.getElementById('output'),
+          delay: 50
+      });
+      typing.start();
+  </script>
   <!-- 页面点击小红心 -->
   <script type="text/javascript" src="https://wang926454.gitee.io/reader/JS/love.js"></script>
 </body>

@@ -16,9 +16,9 @@
     })();
   </script>
   <script type="text/javascript">
-    var name = prompt("请输入我的手机号码");
-    if (name != '15979271416' && name != "13266781417"){
-      alert("号码错误");
+    var name = prompt("请输入我的微博昵称");
+    if (name.trim() != '随风飘的纸飞机'){
+      alert("昵称错误");
       window.history.go(-1);
     }else{
       setTimeout(function(){
@@ -29,7 +29,7 @@
             document.getElementById("msg3").innerHTML = "o(*////▽////*)o";
           },1000)
         },1000)
-      },1000)
+      },200)
     }
 
     function cv2() {
