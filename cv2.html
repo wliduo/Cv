@@ -30,12 +30,8 @@
     <script type="text/javascript">
       var name = prompt("请输入我的名字");
       if(name != 'wang'){
-        var flag = confirm("名字错误，点击确定跳转到我的主页");
-        if (flag == true) {
-          window.location.href = "https://wang64.cn";
-        }else{
-          window.location.href = "https://cv.wang64.cn";
-        }
+        alert("名字输入不对哦");
+        window.location.href = "https://wang64.cn/go?url=https://cv.wang64.cn/about";
       }
     </script>
   </head>
