@@ -10,21 +10,23 @@
     var name = prompt("请输入我的微博昵称");
     if (name.trim() != '随风飘的纸飞机'){
       alert("昵称输入不对哦");
-      window.history.go(-1);
+      window.location.href = "https://cmd.wang64.cn";
     }else{
-      setTimeout(function(){
-        document.getElementById("msg1").innerHTML = "想得美~hhh";
-        setTimeout(function(){
-          document.getElementById("msg2").innerHTML = "其实是简历还没写呢";
-          setTimeout(function(){
-            document.getElementById("msg3").innerHTML = "o(*////▽////*)o";
-          },1000)
-        },1000)
-      },200)
+      // setTimeout(function(){
+      //   document.getElementById("msg1").innerHTML = "想得美~hhh";
+      //   setTimeout(function(){
+      //     document.getElementById("msg2").innerHTML = "其实是简历还没写呢";
+      //     setTimeout(function(){
+      //       document.getElementById("msg3").innerHTML = "o(*////▽////*)o";
+      //     },1000)
+      //   },1000)
+      // },200)
+      alert("傻子一样去看我微博名么");
+      window.location.href = "https://cmd.wang64.cn";
     }
 
-    function cv2() {
-      window.location.href = "https://cv.wang64.cn/cv2";
+    function cv() {
+      window.location.href = "https://cv.wang64.cn/cv";
     }
   </script>
 </head>
@@ -33,7 +35,7 @@
   <h2 align="center">还想看我简历</h2>
   <h2 align="center" id="msg1"></h2>
   <h2 align="center" id="msg2"></h2>
-  <h2 align="center" id="msg3" ondblclick="cv2()"></h2>
+  <h2 align="center" id="msg3" ondblclick="cv()"></h2>
 
   <!-- 页面点击小红心 -->
   <script type="text/javascript" src="https://wang926454.gitee.io/reader/JS/love.js"></script>
