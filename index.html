@@ -1,134 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>HelloWorld</title>
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap-theme.css">
-    <link rel="stylesheet" href="https://text.wang64.cn/typing/css/typing.css">
-    <!-- Icons --><link rel="shortcut icon" href="https://wang64.cn/static/favicon.ico">
-    <style>
-		body {
-			background: #282828;
-		}
-        .row {
-            margin-top: 12px;
-        }
-
-        .keyword {
-            color: #3ffc19;
-        }
-
-        .string {
-            color: #f2ea0e;
-        }
-
-        .info {
-            color: #ff4242;
-        }
-
-        .func {
-            color: #2d61e2;
-        }
-
-        dot {
-            display: inline-block;
-            height: 1em;
-            line-height: 1;
-            text-align: left;
-            vertical-align: -.25em;
-            overflow: hidden
-        }
-
-        dot::before {
-            display: block;
-            content: '...\A..\A.';
-            white-space: pre-wrap;
-            animation: dot 2s infinite step-start both
-        }
-
-        @keyframes dot {
-            33% {
-                transform: translateY(-2em)
-            }
-
-            66% {
-                transform: translateY(-1em)
-            }
-        }
-
-        #source, #output-wrap {
-            height: 160px;
-            background: #282828;
-            color: #fff;
-            padding: 20px;
-            font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
-            font-size: 18px;
-            line-height: 26px;
-        }
-
-        @media screen and (max-width: 650px) {
-            #source, #output-wrap {
-                font-size: 16px;
-            }
-        }
-        @media screen and (max-width: 550px) {
-            #source, #output-wrap {
-                font-size: 14px;
-            }
-        }
-        @media screen and (max-width: 430px) {
-            #source, #output-wrap {
-                font-size: 12px;
-            }
-        }
-    </style>
-    <script src="https://text.wang64.cn/typing/js/typing.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=100%, initial-scale=1">
+  <link rel="shortcut icon" href="https://wang64.cn/static/favicon.ico">
+  <title>随心</title>
+  <link href="css/index.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://text.wang64.cn/typing/css/typing.css">
+  <script src="https://text.wang64.cn/typing/js/typing.js"></script>
 </head>
-<!-- 源码 https://github.com/coffeedeveloper/typing.js -->
+
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12" style="display: none;">
-                <div id="source">
-                    <span class="keyword">javac HelloWorld.java</span><br>> 
-                    <span class="keyword">java HelloWorld</span><br>> 
-                    <span class="info">Hello World</span><br>> 
-                </div>
-            </div>
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div id="output-wrap">
-                    HelloWorld.java<br>
-                    ------------------------------------------<br>
-                    <span class="func">public class </span><span class="string">HelloWorld </span>{<br>
-                    <span class="func">&nbsp;&nbsp;public static </span>void <span class="info">main</span>(String[] <span class="string">args</span>) {<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="info">System.out.println</span>("<span class="string">Hello World</span>");<br>
-                    &nbsp;&nbsp;}<br>
-                    }<br>
-                    <!-- ------------------------------------------<br>
-                    正在加载中<dot>...</dot><br> -->
-                    ------------------------------------------<br>> 
-                    <span id="output"></span>
-                    <span class="typing-cursor-white">|</span>
-                </div>
-            </div>
+  <div id="content">
+    <div class="container">
+      <div class="panel panel-left">
+        <div class="link-panel" style="margin-top: 5px;">
+          <div class="link"><a href="https://github.com/wang926454" target="_blank">GitHub</a></div>
+          <div class="link"><a href="https://wang64.cn" target="_blank">Home</a></div>
+          <div class="link"><a href="https://blog.csdn.net/wang926454" target="_blank">CSDN</a></div>
+          <div class="link"><a href="mailto:eren@wang64.cn">Email</a></div>
+          <div class="link"><a title="1107224733" href="http://wpa.qq.com/msgrd?v=3&uin=1107224733&site=qq&menu=yes" target="_blank">QQ</a></div>
         </div>
+        <div class="discription" style="margin-top: 40px;">
+          <h3>IT Farmer</h3>
+          <p>Simple. Optimistic. Easy-Going.</p>
+          <h2 style="margin-top: 10px;">Eren</h2>
+        </div>
+        <a href="https://wang64.cn" target="_blank">
+          <img id="img" src="https://wang926454.gitee.io/reader/Image/headt.png" alt="随心">
+        </a>
+      </div>
+      <div class="panel panel-right">
+        <div id="source" style="display: none;">
+          <div class="discription">
+            <h2>随心</h2>
+            <p>简单，乐观，随和</p>
+            <h3>IT民工</h3>
+          </div>
+          <div class="link-panel">
+            <div class="link"><a href="https://cv.wang64.cn/cv" target="_blank">简历</a></div>
+            <div class="link"><a href="https://www.zhihu.com/people/wang926454" target="_blank">知乎</a></div>
+            <div class="link"><a href="https://weibo.com/wang926454" target="_blank">微博</a></div>
+            <div class="link"><a title="....." href="#">微信</a></div>
+            <div class="link"><a href="https://gitee.com/wang926454" target="_blank">码云</a></div>
+          </div>
+        </div>
+        <div id="output"></div>
+      </div>
+      <img id="avatar" src="img/avatar.png">
     </div>
-    <script type="text/javascript">
-        var typing = new Typing({
-            source: document.getElementById('source'),
-            output: document.getElementById('output'),
-            delay: 50
-        });
-        typing.start();
-        setTimeout(function(){ 
-            window.location.href = "https://cv.wang64.cn/about";
-        }, 7000);
-    </script>
-    <!-- 页面点击小红心 -->
-    <script type="text/javascript" src="https://wang926454.gitee.io/reader/JS/love.js"></script>
-    <script type="text/javascript" src="https://wang64.cn/static/count.js"></script>
+  </div>
+  <script type="text/javascript">
+      var typing = new Typing({
+          source: document.getElementById('source'),
+          output: document.getElementById('output'),
+          delay: 35
+      });
+      typing.start();
+  </script>
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="https://wang926454.gitee.io/reader/JS/love.js"></script>
+  <script type="text/javascript" src="https://wang64.cn/static/count.js"></script>
 </body>
+
 </html>
