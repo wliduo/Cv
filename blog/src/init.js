@@ -239,7 +239,7 @@
     cnzz:function(){
       var that = this;
       var node = document.createElement('script');
-      node.src = 'http://s4.cnzz.com/stat.php?id=1642323&web_id=1642323';
+      // node.src = 'http://s4.cnzz.com/stat.php?id=1642323&web_id=1642323';
       node.async = true;
       HEAD.insertBefore(node, HEAD.firstChild);
     }
